@@ -61,8 +61,8 @@ pre_install do |installer|
 end
 
 
-project 'pak',
-  'Debug' => :debug,
+project 'fourier_fun_time',
+  'Debug' => :debug
 
 target 'fourier_fun_time' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -108,5 +108,7 @@ target 'fourier_fun_time' do
   pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
   
   use_native_modules!
+
+  workspace 'fourier_fun_time'
 end
 
