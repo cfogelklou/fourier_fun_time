@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* fourier_fun_timeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* fourier_fun_timeTests.m */; };
-		1230E3114E83D274451DB503 /* Pods_fourier_fun_time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA026D4171C978CA50CB1948 /* Pods_fourier_fun_time.framework */; };
+		02BED852C439ED8267699D84 /* Pods_fourier_fun_time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730CA153BBB25F9C8EB6EB99 /* Pods_fourier_fun_time.framework */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		15B73236240D0B36007FAAD7 /* libRNAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1524B803240CFBE7009D66E5 /* libRNAudio.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -34,13 +33,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 8399151F1E753A5B0082B8D7;
 			remoteInfo = remote_io;
-		};
-		1524B802240CFBE7009D66E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1524B7FE240CFBE6009D66E5 /* RNAudio.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = RNAudio;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -64,14 +56,13 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = fourier_fun_time/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = fourier_fun_time/main.m; sourceTree = "<group>"; };
 		1524B7F8240CFBA0009D66E5 /* remote_io.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = remote_io.xcodeproj; path = ../sau/sau_src/rn_audio/ios/micLib/remote_io/remote_io.xcodeproj; sourceTree = "<group>"; };
-		1524B7FE240CFBE6009D66E5 /* RNAudio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNAudio.xcodeproj; path = ../sau/sau_src/rn_audio/ios/RNAudio.xcodeproj; sourceTree = "<group>"; };
-		1EAC9AA91D2C83F6AF728A6E /* Pods-fourier_fun_time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourier_fun_time.debug.xcconfig"; path = "Target Support Files/Pods-fourier_fun_time/Pods-fourier_fun_time.debug.xcconfig"; sourceTree = "<group>"; };
+		1864C95B42E8E3AA9DBBE3F5 /* Pods-fourier_fun_time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourier_fun_time.release.xcconfig"; path = "Target Support Files/Pods-fourier_fun_time/Pods-fourier_fun_time.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* fourier_fun_time-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fourier_fun_time-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* fourier_fun_time-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fourier_fun_time-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1700DA35459084A3C391DAC /* Pods-fourier_fun_time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourier_fun_time.release.xcconfig"; path = "Target Support Files/Pods-fourier_fun_time/Pods-fourier_fun_time.release.xcconfig"; sourceTree = "<group>"; };
+		730CA153BBB25F9C8EB6EB99 /* Pods_fourier_fun_time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourier_fun_time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81BFAF43AD0B941C1996D0B /* Pods-fourier_fun_time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourier_fun_time.debug.xcconfig"; path = "Target Support Files/Pods-fourier_fun_time/Pods-fourier_fun_time.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FA026D4171C978CA50CB1948 /* Pods_fourier_fun_time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourier_fun_time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15B73236240D0B36007FAAD7 /* libRNAudio.a in Frameworks */,
-				1230E3114E83D274451DB503 /* Pods_fourier_fun_time.framework in Frameworks */,
+				02BED852C439ED8267699D84 /* Pods_fourier_fun_time.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,20 +137,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1524B7FF240CFBE6009D66E5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1524B803240CFBE7009D66E5 /* libRNAudio.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				FA026D4171C978CA50CB1948 /* Pods_fourier_fun_time.framework */,
+				730CA153BBB25F9C8EB6EB99 /* Pods_fourier_fun_time.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,7 +150,6 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				1524B7FE240CFBE6009D66E5 /* RNAudio.xcodeproj */,
 				1524B7F8240CFBA0009D66E5 /* remote_io.xcodeproj */,
 			);
 			name = Libraries;
@@ -203,8 +184,8 @@
 		AB25407353A7EBAC1CBCDC1F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1EAC9AA91D2C83F6AF728A6E /* Pods-fourier_fun_time.debug.xcconfig */,
-				B1700DA35459084A3C391DAC /* Pods-fourier_fun_time.release.xcconfig */,
+				E81BFAF43AD0B941C1996D0B /* Pods-fourier_fun_time.debug.xcconfig */,
+				1864C95B42E8E3AA9DBBE3F5 /* Pods-fourier_fun_time.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -234,13 +215,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "fourier_fun_time" */;
 			buildPhases = (
-				79DEFA4AD50A6A6142590021 /* [CP] Check Pods Manifest.lock */,
+				1C9DADEF7C1DE9EE2FDD40A8 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				EE97F20F0D6C2E3B136267C5 /* [CP] Embed Pods Frameworks */,
+				10FB30A66781EC4CB31960FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,10 +314,6 @@
 					ProductGroup = 1524B7F9240CFBA0009D66E5 /* Products */;
 					ProjectRef = 1524B7F8240CFBA0009D66E5 /* remote_io.xcodeproj */;
 				},
-				{
-					ProductGroup = 1524B7FF240CFBE6009D66E5 /* Products */;
-					ProjectRef = 1524B7FE240CFBE6009D66E5 /* RNAudio.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -354,13 +331,6 @@
 			fileType = archive.ar;
 			path = libremote_io.a;
 			remoteRef = 1524B7FC240CFBA0009D66E5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1524B803240CFBE7009D66E5 /* libRNAudio.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNAudio.a;
-			remoteRef = 1524B802240CFBE7009D66E5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -414,43 +384,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		79DEFA4AD50A6A6142590021 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-fourier_fun_time-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE97F20F0D6C2E3B136267C5 /* [CP] Embed Pods Frameworks */ = {
+		10FB30A66781EC4CB31960FF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -460,11 +394,7 @@
 				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
 				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
 				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
-				"${BUILT_PRODUCTS_DIR}/RNCMaskedView/RNCMaskedView.framework",
 				"${BUILT_PRODUCTS_DIR}/RNFastImage/RNFastImage.framework",
 				"${BUILT_PRODUCTS_DIR}/RNGestureHandler/RNGestureHandler.framework",
 				"${BUILT_PRODUCTS_DIR}/RNReanimated/RNReanimated.framework",
@@ -491,9 +421,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
 				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
 				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/react-native-safe-area-context/react_native_safe_area_context.framework",
 				"${BUILT_PRODUCTS_DIR}/toolbar-android/toolbar_android.framework",
 			);
@@ -502,11 +430,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBReactNativeSpec.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCMaskedView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNFastImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNGestureHandler.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNReanimated.framework",
@@ -533,9 +457,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_safe_area_context.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/toolbar_android.framework",
 			);
@@ -543,6 +465,42 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fourier_fun_time/Pods-fourier_fun_time-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1C9DADEF7C1DE9EE2FDD40A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fourier_fun_time-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -690,7 +648,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EAC9AA91D2C83F6AF728A6E /* Pods-fourier_fun_time.debug.xcconfig */;
+			baseConfigurationReference = E81BFAF43AD0B941C1996D0B /* Pods-fourier_fun_time.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -713,7 +671,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1700DA35459084A3C391DAC /* Pods-fourier_fun_time.release.xcconfig */;
+			baseConfigurationReference = 1864C95B42E8E3AA9DBBE3F5 /* Pods-fourier_fun_time.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

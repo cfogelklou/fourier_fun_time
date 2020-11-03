@@ -96,16 +96,14 @@ target 'fourier_fun_time' do
   pod 'ReactCommon/callinvoker', :path => "../node_modules/react-native/ReactCommon"
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
   pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga', :modular_headers => true
+  #pod 'RNAudio', :path => '../sau/sau_src/rn_audio/ios/RNAudio.podspec'
 
 #  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'Firebase/Database', '6.24.0',:modular_headers => true
-  pod 'Firebase/Auth', '6.24.0',:modular_headers => true
-
   permissions_path = '../node_modules/react-native-permissions/ios'
-  pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+  #pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
   
   use_native_modules!
 

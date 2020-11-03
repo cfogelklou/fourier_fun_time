@@ -19,7 +19,6 @@
   "dependencies": {
     "@react-native-community/cli": "^4.12.0",
     "@react-native-community/cli-platform-ios": "^4.11.0",
-    "@react-native-community/masked-view": "^0.1.10",
     "@react-native-community/toolbar-android": "^0.1.0-rc.1",
     "@react-navigation/native": "^5.7.3",
     "@react-navigation/stack": "^5.9.0",
@@ -29,6 +28,7 @@
     "prop-types": "^15.7.2",
     "react": "16.11.0",
     "react-native": "^0.62.2",
+    "react-native-chart-kit": "^5.1.1",
     "react-native-fast-image": "^8.3.2",
     "react-native-gesture-handler": "^1.7.0",
     "react-native-permissions": "^2.2.2",
@@ -39,8 +39,7 @@
     "react-native-svg": "^12.1.0",
     "react-native-vector-icons": "^6.6.0",
     "react-redux": "^7.2.1",
-    "redux": "^4.0.5",
-    "react-native-chart-kit": "^5.1.1"
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
