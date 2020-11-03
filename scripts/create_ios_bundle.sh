@@ -1,0 +1,1 @@
+npx react-native bundle --entry-file index.tsx --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios
