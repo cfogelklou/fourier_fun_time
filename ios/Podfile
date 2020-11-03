@@ -1,8 +1,74 @@
-platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
+def add_flipper_pods!(versions = {})
+  versions['Flipper'] ||= '~> 0.33.1'
+  versions['DoubleConversion'] ||= '1.1.7'
+  versions['Flipper-Folly'] ||= '~> 2.1'
+  versions['Flipper-Glog'] ||= '0.3.6'
+  versions['Flipper-PeerTalk'] ||= '~> 0.0.4'
+  versions['Flipper-RSocket'] ||= '~> 1.0'
+
+  pod 'FlipperKit', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/FlipperKitLayoutPlugin', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/SKIOSNetworkPlugin', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/FlipperKitUserDefaultsPlugin', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/FlipperKitReactPlugin', versions['Flipper'], :configuration => 'Debug (QA)'
+
+  # List all transitive dependencies for FlipperKit pods
+  # to avoid them being linked in Release builds
+  pod 'Flipper', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'Flipper-DoubleConversion', versions['DoubleConversion'], :configuration => 'Debug (QA)'
+  pod 'Flipper-Folly', versions['Flipper-Folly'], :configuration => 'Debug (QA)'
+  pod 'Flipper-Glog', versions['Flipper-Glog'], :configuration => 'Debug (QA)'
+  pod 'Flipper-PeerTalk', versions['Flipper-PeerTalk'], :configuration => 'Debug (QA)'
+  pod 'Flipper-RSocket', versions['Flipper-RSocket'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/Core', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/CppBridge', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/FBCxxFollyDynamicConvert', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/FBDefines', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/FKPortForwarding', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/FlipperKitHighlightOverlay', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/FlipperKitLayoutTextSearchable', versions['Flipper'], :configuration => 'Debug (QA)'
+  pod 'FlipperKit/FlipperKitNetworkPlugin', versions['Flipper'], :configuration => 'Debug (QA)'
+end
+
+# Post Install processing for Flipper
+def flipper_post_install(installer)
+  installer.pods_project.targets.each do |target|
+    if target.name == 'YogaKit'
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '5.0'
+      end
+    end
+  end
+end
+
+# Convert all permission pods into static libraries
+pre_install do |installer|
+  installer.pod_targets.each do |pod|
+    if pod.name.eql?('RNPermissions') || pod.name.start_with?('Permission-')
+      def pod.build_type;
+        # Uncomment one line depending on your CocoaPods version
+        Pod::BuildType.static_library # >= 1.9
+        # Pod::Target::BuildType.static_library # < 1.9
+      end
+    end
+  end
+end
+
+
+project 'pak',
+  'Debug' => :debug,
+
 target 'fourier_fun_time' do
-  # Pods for fourier_fun_time
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for polestar_pak
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -21,33 +87,26 @@ target 'fourier_fun_time' do
   pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text'
   pod 'React-RCTVibration', :path => '../node_modules/react-native/Libraries/Vibration'
   pod 'React-Core/RCTWebSocket', :path => '../node_modules/react-native/'
+  pod 'React-ART', :path => '../node_modules/react-native/Libraries/ART'
 
   pod 'React-cxxreact', :path => '../node_modules/react-native/ReactCommon/cxxreact'
   pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi'
   pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor'
   pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector'
-  pod 'ReactCommon/jscallinvoker', :path => "../node_modules/react-native/ReactCommon"
+  pod 'ReactCommon/callinvoker', :path => "../node_modules/react-native/ReactCommon"
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
-  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga', :modular_headers => true
 
-  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+#  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'fourier_fun_timeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'Firebase/Database', '6.24.0',:modular_headers => true
+  pod 'Firebase/Auth', '6.24.0',:modular_headers => true
 
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+  
   use_native_modules!
 end
 
-target 'fourier_fun_time-tvOS' do
-  # Pods for fourier_fun_time-tvOS
-
-  target 'fourier_fun_time-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
