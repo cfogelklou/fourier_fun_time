@@ -1,0 +1,5 @@
+rootProject.name = 'fourier_fun_time'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+include ':rn-audio'
+project(':rn-audio').projectDir = new File(rootProject.projectDir, '../sau/sau_src/rn_audio/android')
