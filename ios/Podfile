@@ -60,6 +60,7 @@ pre_install do |installer|
   end
 end
 
+permissions_path = '../node_modules/react-native-permissions/ios'
 
 project 'fourier_fun_time',
   'Debug' => :debug
@@ -96,13 +97,16 @@ target 'fourier_fun_time' do
   pod 'ReactCommon/callinvoker', :path => "../node_modules/react-native/ReactCommon"
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
   pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga', :modular_headers => true
-  pod 'RNAudio', :path => '../sau/sau_src/rn_audio/ios/RNAudio.podspec'
+
+  pod 'Permission-Microphone', :path => "#{permissions_path}/Microphone.podspec"
+  #pod 'react-native-audio-in', :path => '../..'
+  pod 'react-native-audio-in', :path => '../node_modules/react-native-audio-in/react-native-audio-in.podspec'
 
 #  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  permissions_path = '../node_modules/react-native-permissions/ios'
+
   #pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
   
   use_native_modules!
