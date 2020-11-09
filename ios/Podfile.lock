@@ -262,6 +262,8 @@ PODS:
     - React-cxxreact (= 0.62.2)
     - React-jsi (= 0.62.2)
     - ReactCommon/callinvoker (= 0.62.2)
+  - RNAudio (1.0.0):
+    - React
   - RNFastImage (8.3.3):
     - React-Core
     - SDWebImage (~> 5.8)
@@ -317,6 +319,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/callinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNAudio (from `../sau/sau_src/rn_audio/ios/RNAudio.podspec`)
   - RNFastImage (from `../node_modules/react-native-fast-image`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
@@ -386,6 +389,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNAudio:
+    :path: "../sau/sau_src/rn_audio/ios/RNAudio.podspec"
   RNFastImage:
     :path: "../node_modules/react-native-fast-image"
   RNGestureHandler:
@@ -434,6 +439,7 @@ SPEC CHECKSUMS:
   React-RCTText: fae545b10cfdb3d247c36c56f61a94cfd6dba41d
   React-RCTVibration: 4356114dbcba4ce66991096e51a66e61eda51256
   ReactCommon: ed4e11d27609d571e7eee8b65548efc191116eb3
+  RNAudio: 18cb69ea7a8e3ff7b4183c27d720a05c1930fe4d
   RNFastImage: ff7e055d085abe465b358ce5aa51e3c6d64b1efd
   RNGestureHandler: 7a5833d0f788dbd107fbb913e09aa0c1ff333c39
   RNPermissions: 5df468064df661a4c8c017e2791ce90d7695eea5
@@ -446,6 +452,6 @@ SPEC CHECKSUMS:
   toolbar-android: 85f3ef4d691469f2d304e7dee4bca013aa1ba1ff
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
 
-PODFILE CHECKSUM: eac17cad05f6660ca28b2d6e1ccc26d755f4251f
+PODFILE CHECKSUM: 1eb952ed617649d41d33961f3c5459c6667f6bab
 
 COCOAPODS: 1.9.3
